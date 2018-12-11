@@ -8,6 +8,183 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <h1>You just got phished!</h1>
+    <div id="centering">
+        <h1>You just got phished!</h1>
+        <p>
+            Somebody sent you to a fake webpage made with DrillPhish to fool you
+            into giving away your credentials. Your credentials were not stored or
+            stolen, but they could have been!
+        </p>
+        <p>
+            If the person that sent you here configured DrillPhish to do so, your
+            actions on the previous page will have been recorded in a remote log.
+        </p>
+        <h2>What is phishing?</h2>
+        <p>From Wiktionary:</p>
+        <blockquote>
+            The act of sending email that falsely claims to be from a legitimate
+            organization. This is usually combined with a threat or request for
+            information: for example, that an account will close, a balance is due,
+            or information is missing from an account. The email will ask the
+            recipient to supply confidential information, such as bank account
+            details, PINs or passwords; these details are then used by the owners
+            of the website to conduct fraud.
+        </blockquote>
+        <h2>How can I tell if I am getting phished?</h2>
+        <p>
+            There are no ways of identifying phishing that work one hundred
+            percent of the time, but there are things you can look out for:
+        </p>
+        <ul>
+            <li>A call to immediate action</li>
+            <li>Grammatic or typographic errors</li>
+            <li>Deceptive Hyperlinks</li>
+        </ul>
+        <p>
+            Each of these are explained below.
+        </p>
+        <h2>The Signs of Phishing, Explained</h2>
+        <h3>A Call to Immediate Action</h3>
+        <p>
+            Phishing emails will often lure you into acting irrationally by
+            fostering a sense of urgency. They will often do this by
+            threatening the closure of an account, the levy of a hefty fee,
+            legal action or other vexations if you do not click on a link
+            and do <i>something</i> within an short deadline.
+        </p>
+        <p>
+            This deadline is often far more imminent than most legitimate
+            organizations would impose. For example, most organizations that
+            would charge a fee of some kind would typically give a few days
+            of warning prior to doing so. A phishing email, on the other hand,
+            might say that you have 12 hours to log in to "update your
+            settings," to avoid the charge.
+        </p>
+        <h3>Grammatic or Typographic Errors</h3>
+        <p>
+            Face it: statistically speaking, most people on the planet, and,
+            hence, on the Internet, are not from your home country, and do not
+            speak your native language. Ceteris Paribus, you should expect that
+            emails from foreign countries would have more typographic or
+            grammatic errors.
+        </p>
+        <p>
+            For that matter, most legitimate organizations that will contact
+            you through email will put their communications through
+            professional scrutiny, which will filter out typographic errors
+            and grammatic errors--the mistakes of a non-native tongue
+            notwithstanding.
+        </p>
+        <h3>Deceptive Hyperlinks</h3>
+        <p>
+            Phishing emails will usually link you to a website via a
+            clickable hyperlink. In most cases, these hyperlinks are blue
+            and underlined to indicate that they are hyperlinks. The text
+            that you see for a hyperlink can differ from the actual thing
+            to which it links.
+        </p>
+        <p>
+            For instance, a link might read
+            <code>http://good-site.com</code>, but actually direct you
+            to <code>http://bad-site.com</code>. In a typical web browser or
+            email client, when you hover over a hyperlink, you will see the
+            actual thing it links to in a bottom corner of the page. If what
+            you see does not match the <em>domain name</em> of the URL it is
+            linking to, it <em>might</em> be phishing.
+        </p>
+        <p>
+            Note that it is normal for emails to link you to long URLs that
+            contain a lot of random characters. What really matters is who
+            owns the <em>domain</em> you are being sent to--not the stuff
+            that comes after it.
+        </p>
+        <p>
+            Below is an example of a deceptive hyperlink. Try hovering over it
+            to see if you can see what it <em>actually</em> links to.
+        </p>
+        <p>
+            <a href="https://github.com/JonathanWilbur">https://www.google.com</a>
+        </p>
+        <h2>Phishing Email Examples</h2>
+        <h3>Obvious</h3>
+        <pre>
+            Henlo honey,please to meet you. Your acount will expire in three
+            days if you do'nt log in here:
+            <a href="https://gotcha.drillphish.com">http://facebook.com</a>.
+
+            Yours In God's Love,
+            - facebook company
+        </pre>
+        <h3>Passable</h3>
+        <pre>
+            Attention Facebook user! Your account is soon to expire if you do
+            not log in and udpate your security settings. Click
+            <a href="https://gotcha.drillphish.com">this link</a> to update
+            your security settings to avoid the expiration of your account.
+
+            Regards,
+            Facebook Cybersecurity department
+            Phone: 1-650-308-7300
+            1601 Willow Rd. Menlo Park, CA 94025
+        </pre>
+        <p>
+            This email is much less obvious than the first, but it does have
+            one subtle hint: the phisher transposed the letters "d" and "p"
+            in the first occurrence of the word "update." The real Facebook
+            would almost certainly not have such a typo in an email.
+        </p>
+        <p>
+            Further abnormalities in this email are the fact that this fake
+            Facebook did not call you by name, but rather, just referred to
+            you as "Facebook user." For that matter, the circumstances of the
+            email itself are suspicious: do you really think that Facebook
+            would delete your account just because you did not update some
+            security setting?
+        </p>
+        <h3>Crafty</h3>
+        <p>
+            A truly crafty phishing email will include personal information
+            about you, have no typographic or grammatic errors, and create
+            a believable scenario that requires you to log in. The clever
+            email below actually has two phishing links.
+        </p>
+        <pre>
+            Hey Jonathan!
+
+            Your friends are signing up in droves for an event in Tampa
+            tomorrow, and you have been invited! <a href="https://gotcha.drillphish.com">Log in</a> to RSVP so you
+            do not miss out on this once-in-a-lifetime opportunity!
+
+            - Your Friends at Facebook
+
+            <small>
+                Facebook, Inc.
+                Phone: +1 (650) 308-7300
+                1601 Willow Rd. Menlo Park, CA 94025
+                Click <a href="https://gotcha.drillphish.com">here</a> to unsubscribe from these emails.
+            </small>
+        </pre>
+        <h2>What do I do if I am getting phished?</h2>
+        <p>
+            At the very least, do not supply your credentials to the website.
+            If you are uncertain if something is phishing, get a second
+            opinion, preferrably from a cybersecurity officer, if your
+            organization has one. If this is not available to you, you can
+            try calling the organization that sent you the email to confirm
+            whether or not it is normal for them to send out such an email.
+            Finally, you should report anything suspicious to your
+            organization's cybersecurity department, if it has one.
+        </p>
+        <h2>What is DrillPhish?</h2>
+        <p>
+            DrillPhish is a free and open-source tool for generating
+            well-intentioned phishing drill sites.
+        </p>
+        <h2>About</h2>
+        <p>
+            This site was made by Jonathan M. Wilbur, a cybersecurity
+            professional in Tampa, Florida.
+        </p>
+    </div>
 </body>
 </html>
