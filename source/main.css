@@ -2,6 +2,7 @@ body {
     background-color: #263238;
     color: #CFD8DC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3vw;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -10,6 +11,6 @@ h1,h2,h3,h4,h5,h6 {
 
 #centering {
     width: 50vw;
-    min-width: 200px;
+    min-width: 400px;
     margin: auto;
 }

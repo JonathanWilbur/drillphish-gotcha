@@ -6,6 +6,8 @@
 
 This is the default page you are redirected to when phished with DrillPhish.
 
+Take a look: [https://gotcha.drillphish.com](https://gotcha.drillphish.com).
+
 ## Contact Me
 
 If you would like to suggest fixes or improvements on this library, please just
